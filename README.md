@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ### Data Preparation
 1. Please download the FFHQ or LSUN (Church/Cat/Bedroom) dataset and organize the images in `.jpg or .png` format to `DATASET_PATH`. <br>
-    FFHQ: https://github.com/NVlabs/ffhq-dataset)<br>
+    FFHQ: https://github.com/NVlabs/ffhq-dataset<br>
     LSUN Church/Cat/Bedroom: https://github.com/fyu/lsun
   
 2. Create lmdb datasets.
