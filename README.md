@@ -27,8 +27,8 @@ pip install -r requirements.txt
 
 
 ### Data Preparation
-1. Please download the FFHQ or LSUN (Church/Cat/Bedroom) dataset and organize the images in `.jpg or .png` format to `DATASET_PATH`. 
-    FFHQ: https://github.com/NVlabs/ffhq-dataset
+1. Please download the FFHQ or LSUN (Church/Cat/Bedroom) dataset and organize the images in `.jpg or .png` format to `DATASET_PATH`. <br>
+    FFHQ: https://github.com/NVlabs/ffhq-dataset<br>
     LSUN Church/Cat/Bedroom: https://github.com/fyu/lsun
   
 2. Create lmdb datasets.
@@ -43,8 +43,8 @@ Run the command `sh train.sh` to train the model with default hyperparameters. N
 Args: 
 - `--Generator=PixelFolder` to declare the model name. We also support training CIPS and StyleGAN2, you only need to modify the hyperparameter here.
 - `--batch=int` to set the batch size. 
-- `--out_path`, which is the path of output files including images, checkpoints and tensorboard files. 
-- `--path_fid` to temporarily save the images generated when calculating the FID score. 
+- `--out_path=str`, which is the path of output files including images, checkpoints and tensorboard files. 
+- `--path_fid=str` to save the images generated when calculating the FID score. 
 
 
 ### Evaluation
